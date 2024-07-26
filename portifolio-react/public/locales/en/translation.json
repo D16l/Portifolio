@@ -1,3 +1,10 @@
 {
-    "header": "Hello, my name is Denny Peyerl"
+    "home": {
+        "click": "Click Here!",
+        "header": "Hello, my name is Denny Peyerl",
+        "introduction": "Welcome to my portfolio! Here you can find my projects and a little about me, I hope you enjoy it :D",
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects"
+    }
 }

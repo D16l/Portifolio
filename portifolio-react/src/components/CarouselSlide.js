@@ -54,7 +54,7 @@ const CarouselSlide = styled.li`
                 }
         };
 
-        @media only screen and (min-width: 830px) and (max-width: 1299px){
+        @media only screen and (min-width: 831px) and (max-width: 1299px){
             img{
                 width: 43rem;
                 height: 28.125rem;

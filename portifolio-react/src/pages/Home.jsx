@@ -13,12 +13,13 @@ import GitHubIcon from '../components/GitHubIcon';
 import LinkedinIcon from '../components/LinkedinIcon';
 import MailIcon from '../components/MailIcon';
 import { useTranslation } from 'react-i18next';
+import Separator from '../components/Separator';
 
 
 
 const LittleAboutMe = styled.p`
     width: 48rem;
-    padding: 1% 2% 1% 2%;
+    padding: 1.5% 2% 0% 2%;
 
       @media only screen and (min-width: 0px) and (max-width: 280px){
         width: 16rem;
@@ -152,19 +153,20 @@ function Home() {
     <>
 {/*Part where the titles are located and where an animation is performed with the 'ClickMe' function.*/}
       <TitleBackground>
-          <NoCopy><h1 id="firstTitle" style={{ display: 'flex' }}>Clique Aqui!</h1></NoCopy>
-          <h1 id="secondTitle" style={{ display: 'none' }}>{t('header')}</h1>
+          <NoCopy><h1 id="firstTitle" style={{ display: 'flex' }}>{t('home.click')}</h1></NoCopy>
+          <h1 id="secondTitle" style={{ display: 'none' }}>{t('home.header')}</h1>
       </TitleBackground>
 {/* Using body component where you put the height in px based in your desired body height*/}
         <StyledBody $baseHeight={736} data-body>
-          <LittleAboutMe>Sou um desenvolvedor Front-End iniciante, apaixonado por criar interfaces de usuário envolventes e divertidas. Tenho conhecimento em HTML, CSS e JavaScript, e recentemente comecei a explorar o  React.</LittleAboutMe>
+          <LittleAboutMe>{t('home.introduction')}</LittleAboutMe>
+          <Separator $baseWidth={800} $left="1rem"></Separator>
           <div style={{display: 'flex', justifyContent: 'center'}}>
             <div style={{ position: 'relative'}} data-carousel>
 {/* Using data-nav-button to create an index in each of the buttons, and using those index in the navigationButtons function */}
               <div style={{ display: 'flex', justifyContent: 'space-evenly'}}>
-              <NoCopy><NavTxtButton tabIndex="1" data-nav-button="0">Sobre</NavTxtButton></NoCopy>
-              <NoCopy><NavTxtButton tabIndex="2" data-nav-button="1">Habilidades</NavTxtButton></NoCopy>
-              <NoCopy><NavTxtButton tabIndex="3" data-nav-button="2">Projetos</NavTxtButton></NoCopy>
+              <NoCopy><NavTxtButton tabIndex="1" data-nav-button="0">{t('home.about')}</NavTxtButton></NoCopy>
+              <NoCopy><NavTxtButton tabIndex="2" data-nav-button="1">{t('home.skills')}</NavTxtButton></NoCopy>
+              <NoCopy><NavTxtButton tabIndex="3" data-nav-button="2">{t('home.projects')}</NavTxtButton></NoCopy>
               </div>
 {/* This is where the images for the Carousel are. They use React Routes for the other pages */}
               <ul style={{ padding:'0.9rem 3rem 0 3rem' }} data-slides>

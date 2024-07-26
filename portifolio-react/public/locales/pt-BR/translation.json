@@ -1,3 +1,10 @@
 {
-    "header": "Olá, me chamo Denny Peyerl"
+    "home": {
+        "click": "Clique Aqui!",
+        "header": "Olá, me chamo Denny Peyerl",
+        "introduction": "Bem vindo ao meu portifólio! Aqui você consegue encontrar meus projetos e um pouco sobre mim, espero que se divirta :D",
+        "about": "Sobre",
+        "skills": "Habilidades",
+        "projects": "Projetos"
+    }
 }
