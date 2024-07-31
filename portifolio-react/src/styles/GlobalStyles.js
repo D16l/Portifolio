@@ -36,8 +36,8 @@ const GlobalStyle = createGlobalStyle`
     };
 
     ::selection{
+                color: white;
                 background: ${({theme}) => theme.colors.selection};
-                color: ${({theme}) => theme.colors.body}
             }
 
 
@@ -96,6 +96,10 @@ const GlobalStyle = createGlobalStyle`
             width: 51rem;
             height: 75rem;
             align-content: center;
+        };
+
+        h1{
+            font-size: 3.8rem;
         }
     };
 
@@ -104,6 +108,10 @@ const GlobalStyle = createGlobalStyle`
             width: 64rem;
             height: 75rem;
             align-content: center;
+        };
+
+        h1{
+            font-size: 3.8rem;
         }
     };
 
@@ -114,6 +122,13 @@ const GlobalStyle = createGlobalStyle`
             align-content: center;
         }
     };
+
+    @media only screen and (min-width: 1800px) and (max-width: 2000px){
+
+        h1{
+            font-size: 3.8rem;
+        }
+    }
 
     @media only screen and (min-width: 2001px){
         body{

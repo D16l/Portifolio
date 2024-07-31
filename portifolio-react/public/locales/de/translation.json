@@ -6,6 +6,10 @@
         "about": "Über",
         "skills": "Fähigkeiten",
         "projects": "Projekte"
+    },
+
+    "about": {
+        "header": "Über mich"
     }
     
 }

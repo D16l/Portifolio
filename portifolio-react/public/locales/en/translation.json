@@ -6,5 +6,9 @@
         "about": "About",
         "skills": "Skills",
         "projects": "Projects"
+    },
+
+    "about": {
+        "header": "About Me"
     }
 }

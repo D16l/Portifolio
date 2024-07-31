@@ -8,7 +8,6 @@ import StyledLinkIcon from '../components/StyledLinkIcon';
 import TitleBackground from '../components/TitleBackground';
 import StyledBody from '../components/StyledBody';
 import styled from 'styled-components';
-import ThemeToggle from '../components/ThemeToggle';
 import GitHubIcon from '../components/GitHubIcon';
 import LinkedinIcon from '../components/LinkedinIcon';
 import MailIcon from '../components/MailIcon';
@@ -157,7 +156,7 @@ function Home() {
           <h1 id="secondTitle" style={{ display: 'none' }}>{t('home.header')}</h1>
       </TitleBackground>
 {/* Using body component where you put the height in px based in your desired body height*/}
-        <StyledBody $baseHeight={736} data-body>
+        <StyledBody $baseHeight={736} opacity="0" data-body>
           <LittleAboutMe>{t('home.introduction')}</LittleAboutMe>
           <Separator $baseWidth={800} $left="1rem"></Separator>
           <div style={{display: 'flex', justifyContent: 'center'}}>
@@ -186,7 +185,6 @@ function Home() {
             </div>
           </div>
         </StyledBody>
-        <ThemeToggle />
     </>
   );
 }

@@ -7,13 +7,17 @@ const TransitionHome = ({ src, alt, to, width, height }) => {
     const navigate = useNavigate();
 
     const handleAnimationEnd = () => {
-        document.body.classList.remove('animate__animated', 'animate__fadeOutUpBig');
+        document.querySelector('[data-body]').classList.remove('animate__animated', 'animate__fadeOutUpBig');
+        document.getElementById('secondTitle').classList.remove('animate__animated', 'animate__fadeOutDown');
         setIsAnimating(false);
         navigate(to);
     };
 
     const startAnimation = () => {
-        document.body.classList.add('animate__animated', 'animate__fadeOutUpBig');
+        document.getElementById('secondTitle').classList.remove('animate__animated', 'animate__fadeInUp');
+        document.querySelector('[data-body]').classList.add('animate__animated', 'animate__fadeOutUpBig');
+        document.getElementById('secondTitle').classList.add('animate__animated', 'animate__fadeOutDown');
+
         setIsAnimating(true);
         setTimeout(handleAnimationEnd, 700);
     }

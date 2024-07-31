@@ -17,7 +17,7 @@ const StyledBody = styled.section.attrs(({ $baseHeight }) => ({
   $baseHeight: $baseHeight
 }))`
   justify-content: center;
-  opacity: 0;
+  opacity: ${(prop) => prop.opacity};
   z-index: 1;
   animation-duration: 2s;
   width: 55rem;
