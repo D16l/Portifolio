@@ -19,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
         justify-content: center;
         box-sizing: border-box;
         position: relative;
+        overflow-x: hidden;
     };
 
     h1{
@@ -26,6 +27,12 @@ const GlobalStyle = createGlobalStyle`
         font-size: 4rem;
         color: ${({theme}) => theme.colors.sixty};
         animation-duration: 1.5s;
+    };
+
+    h3{
+        font-family: 'Bebas Neue';
+        font-size: 2.5rem;
+        color: ${({theme}) => theme.colors.terciary};
     };
 
     p, span{

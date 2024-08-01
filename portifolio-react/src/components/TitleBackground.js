@@ -12,6 +12,7 @@ const TitleBackground = styled.div`
     height: 12.5rem;
     background: ${({theme}) => theme.colors.terciary};
     transition: color 0.5s ease-out;
+    overflow-y: hidden;
 
 /* Media screen variables for responsiveness on almost all devices */
     @media only screen and (min-width: 0px) and (max-width: 280px){

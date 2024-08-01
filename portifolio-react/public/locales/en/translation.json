@@ -9,6 +9,15 @@
     },
 
     "about": {
-        "header": "About Me"
+        "header": "About Me",
+        "hello": "Hi! I'm Denny Sulyvan Peyerl",
+        "helloP": "I'm a beginner developer in the programming field, having started my journey in 2024. This portfolio is not just a showcase of my work but also an introduction to my path, which began with Front-End development.",
+        "helloP2": "I don't have any completed projects yet, but as I finish them, you'll find them here.",
+        "education": "My Education",
+        "educationP": "I'm currently studying Internet Systems at Unicesumar. Besides college, I'm always eager to learn more through courses, videos, and communities. Recently, I completed a C# course and received a certificate.",
+        "motivation": "What Motivates Me",
+        "motivationP": "What motivates me in programming are the endless possibilities that technology offers and my passion for creating new things. I've always enjoyed building something from scratch and understanding how things work. I like to challenge myself because, in a constantly changing world, it's essential to adapt dynamically.",
+        "interests": "My Interests",
+        "interestsP": "When I'm not programming, I love learning new things, usually related to my projects. I also enjoy listening to music and riding my bike, activities that help keep my creativity flowing."
     }
 }
