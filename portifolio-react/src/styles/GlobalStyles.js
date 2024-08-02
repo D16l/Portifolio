@@ -2,12 +2,19 @@ import { createGlobalStyle } from "styled-components";
 
 
 const GlobalStyle = createGlobalStyle`
+    ::-webkit-scrollbar{
+        width: 0.5rem;
+    };
+
+    ::-webkit-scrollbar-thumb{
+        background-color: ${({theme}) => theme.colors.terciary};
+        border-radius: 3rem;
+    };
+    
     html{
         width: 100vw;
         height: 100vh;
         box-sizing: border-box;
-
-        
     };
     
     body{
@@ -112,7 +119,7 @@ const GlobalStyle = createGlobalStyle`
 
     @media only screen and (min-width: 830px) and (max-width: 1299px){
         body{
-            width: 64rem;
+            width: 80rem;
             height: 75rem;
             align-content: center;
         };
@@ -122,9 +129,17 @@ const GlobalStyle = createGlobalStyle`
         }
     };
 
-    @media only screen and (min-width: 1300px) and (max-width: 1800px){
+    @media only screen and (min-width: 1300px) and (max-width: 1500px){
         body{
-            width: 84.4rem;
+            width: 93rem;
+            height: 60rem;
+            align-content: center;
+        }
+    };
+    
+    @media only screen and (min-width: 1501px) and (max-width: 1800px){
+        body{
+            width: 110rem;
             height: 60rem;
             align-content: center;
         }

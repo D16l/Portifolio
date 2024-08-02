@@ -114,8 +114,15 @@ function Home() {
         const firstTitle = document.getElementById('firstTitle');
         const secondTitle = document.getElementById('secondTitle');
         const afterTitle = document.querySelector('[data-body]');
+      // Check if the animation has already been completed
+        const animationCompleted = localStorage.getItem('animationCompleted') === 'true';
       //Verifies if the elements were found
         if (firstTitle && secondTitle && afterTitle) {
+          if (animationCompleted){
+            secondTitle.style.display ='flex';
+            firstTitle.style.display = 'none';
+            afterTitle.style.opacity = '1';
+          } else {
       //Add a click event for the fisrt title
           firstTitle.addEventListener('click', () => {
       //Add a animation class from the Animate.css library to the element afterTitle and defines the opacity to 1
@@ -134,15 +141,14 @@ function Home() {
               secondTitle.classList.add('animate__fadeInUp')
               secondTitle.style.display = 'flex';
               firstTitle.style.display = 'none';
+
+              // Mark the animation as completed in localStorage
+              localStorage.setItem('animationCompleted', 'true')
           }, 1000);
-    
           });
-        } else {
-      //Show and error if either elements are not found
-          console.error('Element with id "firstTitle" or "secondTitle" not found');
         }
       }
-
+  }
     initializeCarousel();
     navigationButtons();
     clickMe();
