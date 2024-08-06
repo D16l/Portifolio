@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ThemeContext } from "./ThemeProviderComponent"; // Novo import
+import { ThemeContext } from "../styles/ThemeProviderComponent"; // Novo import
 
 const ThemeToggle = () => {
   const { currentTheme, toggleTheme } = useContext(ThemeContext);

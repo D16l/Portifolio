@@ -3,7 +3,19 @@ import TitleBackground from '../components/TitleBackground';
 import { useTranslation } from 'react-i18next';
 import StyledBody from '../components/StyledBody';
 import Separator from '../components/Separator'
+import styled from 'styled-components';
 
+
+const FunnyImage = styled.img.attrs(props => ({
+    src: props.theme.mode === 'dark' ? '/img/fotoDarkMode.jpeg' : '/img/fotoLightMode.jpeg'
+}))`
+    width: 21.875rem;
+    border-radius: 0.625rem;
+
+    @media only screen and (min-width: 0px ) and (max-width: 600px){
+        display: none;
+    }
+`
 
 function About() {
     const {t} = useTranslation();
@@ -47,7 +59,7 @@ function About() {
                         <p>{t('about.helloP')}</p>
                         <p>{t('about.helloP2')}</p>
                     </div>
-                    <img src='img/fotoDarkMode.jpeg' width="350px" style={{ borderRadius: '10px'}}></img>
+                    <FunnyImage></FunnyImage>
                 </div>
                 <div style={{display: 'flex', padding:'1.25rem'}}>
                     <div>

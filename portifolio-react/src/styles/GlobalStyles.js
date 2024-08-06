@@ -119,7 +119,7 @@ const GlobalStyle = createGlobalStyle`
 
     @media only screen and (min-width: 830px) and (max-width: 1299px){
         body{
-            width: 80rem;
+            width: 70rem;
             height: 75rem;
             align-content: center;
         };
@@ -131,7 +131,7 @@ const GlobalStyle = createGlobalStyle`
 
     @media only screen and (min-width: 1300px) and (max-width: 1500px){
         body{
-            width: 93rem;
+            width: 80rem;
             height: 60rem;
             align-content: center;
         }
@@ -139,13 +139,13 @@ const GlobalStyle = createGlobalStyle`
     
     @media only screen and (min-width: 1501px) and (max-width: 1800px){
         body{
-            width: 110rem;
+            width: 100rem;
             height: 60rem;
             align-content: center;
         }
     };
 
-    @media only screen and (min-width: 1800px) and (max-width: 2000px){
+    @media only screen and (min-width: 1801px) and (max-width: 2000px){
 
         h1{
             font-size: 3.8rem;
@@ -169,6 +169,22 @@ const GlobalStyle = createGlobalStyle`
         }
     };
 
+    @media only screen and (min-width: 1000px) and (max-width: 1024px) and (min-height: 1300px){
+        body{
+            width: 65rem;
+            height: 40rem;
+            align-content: center;
+        }
+    };
+
+    @media only screen and (min-width: 890px) and (max-width: 912px) and (min-height: 1300px){
+        body{
+            width: 57rem;
+            height: 40rem;
+            align-content: center;
+        }
+    };
+
     @media only screen and (width: 853px) and (height: 1280px){
         body{
             width: 53rem;
@@ -180,6 +196,22 @@ const GlobalStyle = createGlobalStyle`
     @media only screen and (width: 1280px) and (height: 800px){
         body{
             width: 80rem;
+            height: 40rem;
+            align-content: center;
+        }
+    };
+
+    @media only screen and (min-width: 1280px) and (max-width: 1366px) and (min-height: 700px) and (max-height: 799px){
+        body{
+            width: 80rem;
+            height: 40rem;
+            align-content: center;
+        }
+    };
+
+    @media only screen and (min-width: 900px) and (max-width: 1024px) and (min-height: 600px) and (max-height: 799px){
+        body{
+            width: 64rem;
             height: 40rem;
             align-content: center;
         }
